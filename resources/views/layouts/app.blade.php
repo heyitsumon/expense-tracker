@@ -523,7 +523,7 @@
     <link
     rel="icon"
     type="image/x-icon"
-    href="{{ asset('images/favicon.ico') }}"
+    href="{{ asset('../images/favicon.ico') }}"
 >
 
 </head>
