@@ -54,7 +54,7 @@
                                 type="password"
                                 wire:model="currentPassword"
                                 id="currentPassword"
-                                autocomplete="current-password"
+                        
                                 required
                             >
 

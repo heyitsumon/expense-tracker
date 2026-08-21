@@ -527,6 +527,8 @@
 
 <div class="page-wrapper">
 
+     {{-- Global scrolling announcement --}}
+    <x-global-ticker />
 
     {{-- =====================================================
          NAVBAR
