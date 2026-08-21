@@ -160,10 +160,7 @@
         </tr>
     </table>
 
-    <h2 class="section-title income-title">
-        Income
-        <span class="section-total">{{ $currencySymbol }}{{ number_format((float) $incomeTotal, 2) }}</span>
-    </h2>
+   
 
     <table>
 
@@ -194,10 +191,9 @@
         </tbody>
 
     </table>
-
-    <h2 class="section-title expense-title">
-        Expenses
-        <span class="section-total">{{ $currencySymbol }}{{ number_format((float) $expenseTotal, 2) }}</span>
+     <h2 class="section-title income-title">
+        Income
+        <span class="section-total">{{ $currencySymbol }}{{ number_format((float) $incomeTotal, 2) }}</span>
     </h2>
 
     <table>
@@ -224,6 +220,10 @@
             @endforelse
         </tbody>
     </table>
+    <h2 class="section-title expense-title">
+        Expenses
+        <span class="section-total">{{ $currencySymbol }}{{ number_format((float) $expenseTotal, 2) }}</span>
+    </h2>
 
 </body>
 </html>
