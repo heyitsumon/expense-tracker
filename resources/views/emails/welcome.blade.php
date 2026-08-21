@@ -1,31 +1,47 @@
 <x-mail::message>
-# Welcome to {{ config('app.name') }}, {{ $user->name }}
+# 🎉 Welcome, {{ $user->name }}!
 
-Thank you for choosing {{ config('app.name') }}. Your account has been successfully created, and you now have full
-access to your personal financial dashboard.
+Thank you for joining **{{ config('app.name') }}**.
 
-Our platform provides a secure, streamlined way to manage your income, track expenses, and gain complete visibility over
-your financial health.
+Your account has been successfully created, and your personal financial dashboard is ready to use.
 
-Key Features Available to You:
+## 💰 Manage Your Finances Easily
 
-Income & Expense Tracking: Record recurring and one-time transactions across customizable categories.
+With {{ config('app.name') }}, you can keep your financial activity organized and get a clear picture of where your money is going.
 
-Real-Time Financial Overview: Monitor total revenue, total expenditure, and net balance in real time.
+### ✨ What You Can Do
 
-Category Analytics: Review structured breakdowns to identify spending trends and optimization opportunities.
+**📈 Track Income & Expenses**  
+Record one-time and recurring transactions using customizable categories.
 
-Secure Data Management: Update or delete entries safely with built-in password authentication.
+**📊 View Your Financial Overview**  
+Monitor your total income, expenses, and current balance from your dashboard.
 
-Exportable Reporting: Generate and download PDF reports of filtered financial activity for your records.
+**📂 Analyze Categories**  
+Understand your spending patterns with organized category-based analytics.
+
+**🔐 Secure Your Data**  
+Manage your financial records securely with authenticated account access.
+
+**📄 Generate Reports**  
+Export filtered financial activity as PDF reports for your personal records.
 
 <x-mail::button :url="route('dashboard')">
-Access Your Dashboard
+Open My Dashboard →
 </x-mail::button>
 
-If you have any questions or require support, please reach out to our team at support@expensetracker.com.
+### Need Help?
 
-Regards,
+If you have any questions or need assistance, our support team is happy to help.
 
-The {{ config('app.name') }} Team
+**Email:** support@expensetracker.com
+
+Thank you for choosing **{{ config('app.name') }}**. We're excited to help you take control of your finances.
+
+Best regards,  
+**The {{ config('app.name') }} Team**
+
+---
+
+*This is an automated email. Please do not reply directly to this message.*
 </x-mail::message>

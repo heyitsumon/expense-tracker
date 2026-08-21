@@ -738,7 +738,39 @@
                 <h1 class="dashboard-heading">Welcome to, {{ auth()->user()?->name ?? 'there' }}</h1>
                 <p class="dashboard-subtitle">Here is your current financial picture.</p>
             </div>
+            <!-- download pdf-->
+            <div>
+                <form action="{{ route('expense.report.download') }}" method="GET">
 
+                    <div class="row g-3 align-items-end">
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold">
+                                From Date
+                            </label>
+
+                            <input type="date" name="from" class="form-control" value="{{ request('from') }}" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold">
+                                To Date
+                            </label>
+
+                            <input type="date" name="to" class="form-control" value="{{ request('to') }}" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Report
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
         </header>
         <div class="summary-grid">
             <article class="summary-card summary-income">
