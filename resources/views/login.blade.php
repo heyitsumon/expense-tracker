@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in | Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        body{margin:0;background:#f4f8f7;color:#122033;font-family:'DM Sans',sans-serif}.material-symbols-outlined{font-size:1.15em;line-height:1;vertical-align:middle;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}.login-page{display:grid;min-height:100vh;place-items:center;padding:24px}.login-card{width:min(420px,100%);padding:38px;border:1px solid #e0ebe8;border-radius:18px;background:#fff;box-shadow:0 22px 65px rgba(18,32,51,.11)}.brand{display:flex;align-items:center;gap:10px;margin-bottom:34px;font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;color:#fff;background:#122033;box-shadow:5px 5px 0 #b9ead8}.login-card h1{margin:0 0 9px;font-family:'Space Grotesk',sans-serif;font-size:32px;letter-spacing:-.04em}.intro{margin:0 0 28px;color:#68778b;font-size:14px;line-height:1.6}.google-button{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;padding:13px;border:1px solid #d6e1ea;border-radius:9px;color:#122033;background:#fff;font-weight:700;text-decoration:none}.google-button:hover{border-color:#147d72;background:#f4fffb}.google-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;color:#4285f4;font-family:Arial;font-size:17px;font-weight:700}.divider{display:flex;align-items:center;gap:12px;margin:24px 0;color:#a2afbd;font-size:11px}.divider:before,.divider:after{content:'';height:1px;flex:1;background:#e5ecef}.note{margin:0;text-align:center;color:#7e8da0;font-size:12px;line-height:1.6}.back{display:block;margin-top:25px;color:#147d72;text-align:center;font-size:12px;font-weight:700;text-decoration:none}
+    </style>
+</head>
+<body><main class="login-page"><section class="login-card"><div class="brand"><span class="mark"><span class="material-symbols-outlined">account_balance_wallet</span></span>Expense Tracker</div><h1>Welcome back</h1><p class="intro">Sign in with your Google or Gmail account to keep your money view in sync.</p><a href="{{ route('google.login') }}" class="google-button"><span class="google-icon">G</span>Continue with Google / Gmail</a><div class="divider">SECURE GOOGLE SIGN-IN</div><p class="note">Your account is protected by Google OAuth. We never see or store your Gmail password.</p><a href="{{ route('home') }}" class="back"><span class="material-symbols-outlined align-middle">arrow_back</span> Back to home</a></section></main></body>
+</html>
